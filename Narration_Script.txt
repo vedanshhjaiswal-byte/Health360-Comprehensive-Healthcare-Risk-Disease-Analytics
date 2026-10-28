@@ -1,0 +1,32 @@
+Healthcare Risk Analytics — Tableau Project Voice-over
+
+Healthcare Risk Analytics
+Hello, and welcome to my Healthcare Risk Analytics project. In this presentation, I will explain how the patient dataset was prepared, how the visualizations were designed, and how three interactive-style dashboards help explore clinical risk, lifestyle patterns, and population health. The analysis is for educational purposes, not for diagnosing patients.
+
+Dataset and preparation
+The analysis uses 5,000 patient records and 28 fields. These include age, gender, body mass index, exercise, smoking, alcohol use, blood pressure, cholesterol, glucose, symptoms, and indicators for heart disease, diabetes, and stroke. The supplied CSV was already prepared for analysis. Before visualization, I checked its structure, column types, missing values, duplicate rows, and the consistency of categorical and numeric fields. This file contains 0 missing cells and 0 duplicate rows. These checks help avoid misleading charts.
+
+Connecting the data in Tableau
+In Tableau, the workflow begins by choosing Connect to a File and selecting the CSV. On the Data Source page, I review the preview and confirm that numeric fields, such as age and BMI, are recognized as measures, while categories such as gender, age group, and risk tier are dimensions. Binary disease and symptom indicators can be summarized as counts or percentages. I then create worksheets, choose suitable chart types, and assemble related worksheets into dashboards.
+
+Calculated fields and measures
+The prepared dataset also includes derived fields such as age group, BMI category, blood pressure category, disease count, whether any disease is present, risk score, and risk tier. In Tableau, calculated fields can be used to create measures such as patient count, disease prevalence, and the percentage of patients in each risk tier. When calculating prevalence from a binary indicator, the average of zero and one values gives the proportion, which can be formatted as a percentage.
+
+Dashboard 1: Clinical Risk Overview
+The first dashboard focuses on clinical risk. It brings together headline indicators and comparisons across risk tiers. In this dataset, 1,089 patients are labelled Low risk, 2,333 Medium risk, and 1,578 High risk. The recorded any-disease rate is 16.9% for the Low tier, 33.0% for Medium, and 52.7% for High. This provides a descriptive comparison of how the prepared risk categories align with disease indicators. It should not be interpreted as a validated medical prediction.
+
+Dashboard 2: Lifestyle and Disease Patterns
+The second dashboard explores lifestyle and symptoms. It compares disease indicators across exercise, smoking, and alcohol categories, and summarizes symptoms such as fatigue, chest pain, and dizziness. In the full dataset, fatigue is recorded for 51.5% of records, chest pain for 50.4%, and dizziness for 49.7%. These charts make it easier to compare groups and notice patterns, but differences in this dataset are descriptive and do not prove that a lifestyle factor caused a health outcome.
+
+Dashboard 3: Population Health Patterns
+The third dashboard examines population characteristics, including age groups and BMI categories, alongside disease prevalence and disease overlap. Overall, the dataset records heart disease in 30.0%, diabetes in 34.9%, and stroke in 24.9% of records. The any-disease indicator is 35.7%. The disease-count breakdown is also useful: 3,215 records show no listed condition, while 1,207 show all three condition indicators. These values are calculated from the supplied dataset.
+
+Visual design and interpretation
+Across the dashboards, KPI cards summarize key values, bar charts support category comparisons, and clear labels make the measures easier to read. A consistent color palette and dashboard titles help viewers understand the purpose of each page. In Tableau, filters and dashboard actions can be added so viewers can focus on selected age groups, risk tiers, or lifestyle categories. Any interactive controls should be tested to confirm that they filter the intended worksheets.
+
+Important data limitation
+One important limitation is that the data has patterns that may reflect how the dataset was generated. For example, disease rates change sharply across some age groups. Because the dataset appears synthetic, these numbers should not be generalized to real-world populations. The dashboard is a demonstration of data preparation and visualization, not a clinical tool. Real healthcare decisions require validated data, appropriate statistical review, and qualified medical professionals.
+
+Conclusion
+To conclude, this project turns a structured patient dataset into three complementary views: clinical risk, lifestyle and disease patterns, and population health. The process combines data checks, appropriate measures, clear visual encodings, and dashboard organization. Together, these dashboards make the data easier to explore and communicate while keeping the limitations of the analysis visible. Thank you for watching.
+
